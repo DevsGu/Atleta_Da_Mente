@@ -3,7 +3,6 @@ package com.example.controlemental
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.ImageView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -16,18 +15,24 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.controlemental.ui.theme.ControleMentalTheme
 
-class MainActivity : ComponentActivity() {
+class MainActivity3 : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setContentView(R.layout.cadastro)
+        setContentView(R.layout.desenvolvimento)
 
-        val eventoCadastro = findViewById<Button>(R.id.button)
+        val btn1 = findViewById<Button>(R.id.button3)
+        val btn2 = findViewById<Button>(R.id.button4)
 
-        eventoCadastro.setOnClickListener {
-            val intent = Intent(this, MainActivity2::class.java)
+        btn1.setOnClickListener {
+            val intent = Intent(this, MainActivity4::class.java)
             startActivity(intent)
 
+        }
+
+        btn2.setOnClickListener {
+            val intent = Intent(this , MainActivity5::class.java)
+            startActivity(intent)
         }
 
 

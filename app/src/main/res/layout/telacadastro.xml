@@ -9,6 +9,9 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
         android:text="Atleta Mental" />
 
     <EditText
@@ -25,7 +28,8 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textEmailAddress"
-        tools:text="Email" />
+        tools:text="Email"
+        />
 
     <EditText
         android:id="@+id/editTextText3"
